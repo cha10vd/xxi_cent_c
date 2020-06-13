@@ -114,7 +114,7 @@ Because our `domath` target does not specify a script, GNU make assumes `domath`
 
 #### Default script for compiling an `.o` object file from a `.c` source code file:
 ```
-$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $*.
+$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $*.c
 ```
 
 #### Default script for building an executable program  from`.o` object files:
