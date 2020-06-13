@@ -25,7 +25,6 @@ _These libraries are employed throughout the course of the book for exercises_
 * __libXML2__
 
 ## Steps for compilation
------
 
 1. Set up variable for compiler flags.
 2. Set up variable for libraries to link to.
@@ -34,7 +33,6 @@ _These libraries are employed throughout the course of the book for exercises_
 3. Set up system to use these vars to orchestrate compilation.
 
 ## useful compilation flags
-------
 
 * `-g` - Adds necessary symbols for debugging: Variable and function names
 * `-std=gnu11` - Allows code conforming to C11 & POSIX standards
@@ -50,3 +48,7 @@ gcc specific.o -lbroad -lgeneral
 ```
 
 having the object file first gives allows the linker to note unresolved `function`, `structure` and `variable` names. It then goes sequentially through the slecified linked libraries looking for the necessary definitions.
+
+# Further reading
+-------------
+1 [makefiles](docs/MAKEFILES.md)
